@@ -4,7 +4,8 @@
      filecolor=CadetBlue4,
      citecolor=CadetBlue4,      
      urlcolor=CadetBlue4]{hyperref}
-\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{pdflscape}
 
 \usepackage{lipsum} % sampling purposes
 
@@ -72,29 +73,36 @@
   \subsection{Deliverables}
   \lipsum[10-12]
 
-  \begin{sidewaystable}
-    \center
-    \scriptsize
-    \begin{tabular}{|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.2\textwidth}|p{0.05\textwidth}|p{0.2\textwidth}|}
-      \hline
-      Deliverable No. & Task No. & Deliverable Title & Deliverable type & Scheduled delivery date of Annex B & Effective Delivery Date & If not delivered, why? & Disclosure Level & Comments \\ \hline
-    \end{tabular}
-    \caption{Deliverables.}
-  \end{sidewaystable}
-
+  \newpage
+  \begin{landscape}
+    
+    \begin{table}
+      \centering
+      \scriptsize
+      \begin{tabular}{|p{0.1\textwidth}|p{0.1\textwidth}|p{0.2\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.2\textwidth}|p{0.3\textwidth}|}
+        \hline
+        Deliverable No. & Task No. & Deliverable Title & Deliverable type & Scheduled delivery date of Annex B & Effective Delivery Date & If not delivered, why? & Disclosure Level & Comments \\ \hline
+      \end{tabular}
+      \caption{Deliverables.}
+    \end{table}
+  \end{landscape}
+  
   \newpage
   \subsection{Milestones}
   \lipsum[10-12]
 
-  \begin{sidewaystable}
-    \center
-    \scriptsize
-    \begin{tabular}{|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.05\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.2\textwidth}|p{0.2\textwidth}|}
-      \hline
-      Milestone No. & Task No. & Milestone title & Verification methods & Scheduled delivery date of Annex B & Effective Delivery Date Achieved & If not achieved, why? & Comments \\ \hline
-    \end{tabular}
-    \caption{Milestones.}
-  \end{sidewaystable}
+  \newpage
+  \begin{landscape}
+    \begin{table}
+      \center
+      \scriptsize
+      \begin{tabular}{|p{0.1\textwidth}|p{0.1\textwidth}|p{0.2\textwidth}|p{0.4\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|}
+        \hline
+        Milestone No. & Task No. & Milestone title & Verification methods & Scheduled delivery date of Annex B & Effective Delivery Date Achieved & If not achieved, why? & Comments \\ \hline
+      \end{tabular}
+      \caption{Milestones.}
+    \end{table}
+  \end{landscape}
   \newpage
 
 \section{Potential constraints that may affect the execution of the project and proposed measures for their mitigation}
