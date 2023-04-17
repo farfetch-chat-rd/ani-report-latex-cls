@@ -22,7 +22,7 @@
 %%   Grave accent  \`     Left brace    \{     Vertical bar  \|
 %%   Right brace   \}     Tilde         \~}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ani-intermediate}
+\ProvidesClass{ani-final}
 [by FARFETCH]
 \long\def\erdc@size@warning#1{%
   \ClassWarning{ani}{Size-changing option #1 will not be

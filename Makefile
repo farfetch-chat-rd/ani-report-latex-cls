@@ -1,7 +1,7 @@
 
 PACKAGE=ani-intermediate
 
-REPORT = sample-ani-report.tex
+REPORT = sample-ani-report-final.tex
 
 PDF = ${REPORT:%.tex=%.pdf}
 
@@ -44,10 +44,13 @@ archive:  all clean
 	mv $(PACKAGE).tgz $(CURRDIR); \
 	cd $(CURRDIR)
 
-
 zip:  all clean
 	cd ..; \
 	zip -r  $(PACKAGE).zip $(CURRDIR) \
 	-x 'debug*' -x '*~' -x '*.tgz' -x '*.zip' -x CVS -x 'CVS/*'; \
 	mv $(PACKAGE).zip $(CURRDIR); \
 	cd $(CURRDIR)
+
+watch:
+	latexmk -pdflatex="$(LATEX) %O %S" -pdf -dvi- -ps- -interaction=nonstopmode -synctex=1 -pvc $(REPORT)
+
