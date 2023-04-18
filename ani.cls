@@ -37,10 +37,11 @@
 \LoadClass[12pt,twoside]{report}
 \RequirePackage{graphicx,color,caption,longtable}
 \RequirePackage{dcolumn}
-\RequirePackage{natbib}
-\renewcommand{\bibfont}{\fontsize{10pt}{12pt}\selectfont}
-\setlength{\bibhang}{0.5in}
-\setlength{\bibsep}{12pt}
+%\RequirePackage{natbib}
+%\RequirePackage{bibentry}
+%\renewcommand{\bibfont}{\fontsize{10pt}{12pt}\selectfont}
+%\setlength{\bibhang}{0.5in}
+%\setlength{\bibsep}{12pt}
 \RequirePackage{amsmath}
 \RequirePackage[originalcommands]{ragged2e}
 \setlength\RaggedRightParindent{\parindent}
@@ -67,7 +68,7 @@
 \def\@distributionfont{%
   \rmfamily\fontseries{k}\fontsize{9pt}{11pt}\selectfont}
 \def\@eqtagfont{\rmfamily\bfseries\footnotesize}
-\RequirePackage[letterpaper, top=1in, bottom=0.7in, left=1.5in, right=1.5in]{geometry}
+\RequirePackage[letterpaper, top=1in, bottom=1in, left=1.5in, right=1.5in]{geometry}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{\baselineskip}
 \setlength\labelwidth{1em}
@@ -549,7 +550,7 @@
 \setlength{\@fptop}{0pt}%
 \renewcommand \thefigure {\@arabic\c@figure}
 \renewcommand \thetable {\@arabic\c@table}
-\captionsetup{justification=centering,font={footnotesize,sf,bf},
+\captionsetup{justification=justified,font={footnotesize,rm,bf},
 labelsep=period,aboveskip=3pt}
 \captionsetup[table]{position=top}
 \def\arraystretch{1.3}
